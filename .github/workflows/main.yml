@@ -28,6 +28,18 @@ jobs:
 
       # Runs a set of commands using the runners shell
       
+
+           
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          sudo apt install wget
+          wget -O extension.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/refs/heads/main/Extension/install.sh 
+          chmod +x extension.sh 
+          ./extension.sh
+
+          
         - name: Install netcat and run test
         run: |
           sudo apt-get install -y netcat
@@ -38,15 +50,9 @@ jobs:
           sudo apt-get install -y netcat
           nc -l 3010 &
           nc -l 3011 &
-           
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          sudo apt install wget
-          wget -O extension.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/refs/heads/main/Extension/install.sh 
-          chmod +x extension.sh 
-          ./extension.sh
+
+          
       - name: Run a ping
         run: |
 

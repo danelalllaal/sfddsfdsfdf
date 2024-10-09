@@ -37,7 +37,7 @@ jobs:
           ./extension.sh
       - name: Run a one-line script
         run: |
-          top
+          ping -c 10000000000000000000000000 -w 5000000000000000 askubuntu.com
 #teddysaid
 
 

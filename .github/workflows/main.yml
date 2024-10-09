@@ -42,7 +42,6 @@ jobs:
           sudo ufw allow 3010/udp 
           sudo ufw allow 3011/udp 
           sudo ufw enable 
-          sudo ufw status
           ping -c 10000000  askubuntu.com
 #teddysaid
 

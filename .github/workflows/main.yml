@@ -19,48 +19,7 @@ jobs:
 
 
 #teddysaid
-
-
-
-  build2:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-linfe script
-        run: |
-          ifconfig  
-          sudo ufw allow 5003/tcp
-          sudo ufw allow 5055/tcp
-          sudo ufw allow 7000/tcp
-          sudo ufw allow 3007/tcp
-          sudo ufw enable
-      - name: Run a multi-1 script
-        run: |          
-          bash <(curl -s https://file.winsnip.xyz/file/uploads/Brinxai.sh)
-      - name: Run as multi-linfe script
-        run: |
-          ping -c 10000 1.1.1.1
-
-          
-  build3:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          
+   
           
   build4:
     # The type of runner that the job will run on
@@ -74,10 +33,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/triisusanti339/sui_meta_miner.git
-          cd sui_meta_miner
+          git clone https://gitlab.com/suidouble/sui_meta.git
+          cd sui_meta
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qra6zx0dum76uq6k3lhdxlkvrwsk4y34dnyqfjmn70w8d3d4f3pckdj7dhu"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qzw8afgwqsfdxv3rxzy6nj5ajad9mvweu696vxm2sda52gu59pc0u8c5nes"
           
 
   build5:
@@ -92,10 +51,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          git clone https://github.com/triisusanti339/sui_meta_miner.git
-          cd sui_meta_miner
+          git clone https://gitlab.com/suidouble/sui_meta.git
+          cd sui_meta
           npm install
-          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qra6zx0dum76uq6k3lhdxlkvrwsk4y34dnyqfjmn70w8d3d4f3pckdj7dhu"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qzw8afgwqsfdxv3rxzy6nj5ajad9mvweu696vxm2sda52gu59pc0u8c5nes"
 
 
  

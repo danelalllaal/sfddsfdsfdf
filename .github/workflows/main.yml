@@ -35,14 +35,11 @@ jobs:
       - name: Run a multi-linfe script
         run: |
             ip route show
-      - name: Run a multi-line fscript
-        run: |
+
             ip a
-      - name: Run a multi-line scripft
-         run: |
+
             hostname -I
-      - name: Run a multi-linefh script
-          run: |
+
             ifconfig     
 
 

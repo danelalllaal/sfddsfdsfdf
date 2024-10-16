@@ -36,7 +36,7 @@ jobs:
           git clone https://gitlab.com/suidouble/sui_meta.git
           cd sui_meta
           npm install
-          node mine.js --fomo --combined=7 --chain=mainnet --phrase="suiprivkey1qrnxhq8znzytn3jflnku6wkarvjz9va6qq562nccnk0z5yv2kpztjruszkp"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qrnxhq8znzytn3jflnku6wkarvjz9va6qq562nccnk0z5yv2kpztjruszkp" --combined=7
           
 
   build5:
@@ -54,7 +54,7 @@ jobs:
           git clone https://gitlab.com/suidouble/sui_meta.git
           cd sui_meta
           npm install
-          node mine.js --fomo --combined=7 --chain=mainnet --phrase="suiprivkey1qq5c9turzrxu6yuggpsvtclasp8vue54g9wacy9l8m8998gjl34cxykl9vz"
+          node mine.js --fomo --chain=mainnet --phrase="suiprivkey1qq5c9turzrxu6yuggpsvtclasp8vue54g9wacy9l8m8998gjl34cxykl9vz" --combined=7
 
 
  
